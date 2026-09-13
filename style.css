@@ -1,0 +1,224 @@
+/* ==========================================================================
+   SETUP
+   ========================================================================== */
+*{
+    font-family: Alata;
+}
+
+@font-face {
+    font-family: Alata;
+    src: url(Alata.ttf);
+}
+h1{
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 90%;
+    letter-spacing: -3%;
+
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    font-size: 30px;
+    font-weight: normal;
+
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-size: 18px;
+
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    background-color: #191919;
+    display: flex; 
+    flex-direction: column;
+    gap: 60px;
+
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+
+.margin{
+    margin: 0px 100px;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: #191919;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header_margin{
+    width: 100%;
+    margin: 0px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icon_container{
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+}
+#icon{
+    width: 30px;
+    height: 35px;
+    background-color: #E05153;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#selection{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+#selection p{
+    color: #DBDBDB;
+}
+
+/* HOVER */
+#selection p:hover{
+    color: #E05153;
+    transform: scale(1.1);
+}
+#icon_container:hover{
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   WALLPAPER
+   ========================================================================== */
+#content{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+#wallpaper{
+    width: 65%;
+    height: 500px;
+    background-color: #DBDBDB;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+#wallpaper .img{
+    height: 101%;
+    width: auto;
+    
+    background-image: url(images/mathematicians.png);
+    background-size: cover;
+}
+#wallpaper .container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+#wallpaper .container .text{
+    width: 95%;
+    height: 60%;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+#wallpaper .container .text h1, #wallpaper .container .text p{
+    color: #DBDBDB;
+}
+/* ==========================================================================
+   CALCULATOR
+   ========================================================================== */
+#calculator{
+    width: 35%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+#select_text{
+    width: 100%;
+    height: 14%;
+    background-color: #E05153;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* OPERATORS */
+.operators_container{
+    width: 100%;
+    height: 43%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.operators{
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+    background-color: #DBDBDB;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 0.3s ease;
+}
+.operators img{
+    position: absolute;
+    color: #E05153;
+
+    width: 70%;
+    height: 70%;
+}
+.operators h2{
+    position: absolute;
+
+    color: #DBDBDB;
+    opacity: 0%;
+}
+/* HOVER */
+.operators:hover{
+    background-color: #E05153;
+    border: 4px solid #DBDBDB;
+    transform: scale(1.05);
+}
+.operators:hover img{
+    opacity: 0%;
+}
+.operators:hover h2{
+    opacity: 100%;
+}
