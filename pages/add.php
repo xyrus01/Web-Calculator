@@ -39,6 +39,8 @@
                     <h2>Addition Calculator</h2>
                     <p text-align: justify;>Combine two or more numbers into a sum</p>
                 </div>
+
+<!------------ section: PHP PROCESS -------------->
                 <div id="input_area">
                     <form action="" method="POST">
                         <input class="numfield" type="text" name="num1" placeholder="First Number">
